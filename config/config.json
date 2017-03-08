@@ -1,0 +1,6 @@
+{
+  "hbs-partials": {
+    "header": "partials/header.hbs"
+    , "footer": "partials/footer.hbs"
+  }
+}

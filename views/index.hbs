@@ -1,0 +1,16 @@
+{{> header}}
+  <div class="container">
+    <div class="row">
+      <div class="column">1</div>
+      <div class="column">1</div>
+      <div class="column">1</div>
+      <div class="column">1</div>
+    </div>
+    <div class="row" style="flex-wrap: wrap;">
+
+      {{#each files}}
+        <div class="column" style="min-width: 25%; max-width: 25%; height: 60px;">{{fn}}</div>
+      {{/each}}
+    </div>
+  </div>
+{{> footer}}

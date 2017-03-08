@@ -1,0 +1,34 @@
+{
+  "name": "kanistercloud",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-bundle-css": "cat ./node_modules/normalize.css/normalize.css ./node_modules/milligram/dist/milligram.css > ./public/css/bundle.css",
+    "start": "supervisor -e 'hbs,js,json' --ignore './client/js,./public/js' -- server.js --env=local"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dazwiafl/kanistercloud.git"
+  },
+  "author": "Anton @dazwiafl Kahr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dazwiafl/kanistercloud/issues"
+  },
+  "homepage": "https://github.com/dazwiafl/kanistercloud#readme",
+  "dependencies": {
+    "consolidate": "^0.14.5",
+    "express": "^4.15.2",
+    "fs-readdir-recursive": "^1.0.0",
+    "handlebars": "^4.0.6",
+    "milligram": "^1.3.0",
+    "moment": "^2.17.1",
+    "nconf": "^0.8.4",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}
